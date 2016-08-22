@@ -1,13 +1,3 @@
+cmake_minimum_required(VERSION 3.5)
 project(sample)
-
-
-
-
-add_executable(sampleExecutable
-	src/main.cpp
-	src/make_greeting.cpp
-	)
-
-target_include_directories(sampleExecutable PUBLIC headers)
-
-
+add_executable(sample_exe src/main.cpp)

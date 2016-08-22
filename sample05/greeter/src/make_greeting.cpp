@@ -1,11 +1,11 @@
-#include <sample/make_greeting.h>
+#include <greeter/make_greeting.h>
 
 #include <sstream>
 
 #include "localheader.h"
 
 
-std::string sample::make_greeting(const std::string & name)
+std::string greeter::make_greeting(const std::string & name)
 {
 
 	std::stringstream stream;

@@ -20,7 +20,7 @@ target_include_directories(greeter_lib PRIVATE src)
 
 
  if(BUILD_SHARED_LIBS)
-  target_compile_definitions(fareweller_lib PRIVATE GREETER_EXPORTS) 
-  target_compile_definitions(fareweller_lib INTERFACE GREETER_IMPORTS) 
+  target_compile_definitions(greeter_lib PRIVATE GREETER_EXPORTS) 
+  target_compile_definitions(greeter_lib INTERFACE GREETER_IMPORTS) 
 endif()
 

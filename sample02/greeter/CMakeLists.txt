@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
+
 project(greeter)
 
 # Create the main executable
@@ -18,9 +19,17 @@ target_include_directories(greeter_lib PUBLIC include)
 # sample_exe
 target_include_directories(greeter_lib PRIVATE src)
 
-
  if(BUILD_SHARED_LIBS)
   target_compile_definitions(greeter_lib PRIVATE GREETER_EXPORTS) 
   target_compile_definitions(greeter_lib INTERFACE GREETER_IMPORTS) 
 endif()
 
+
+## create test for greeter
+add_executable(greeter_test 
+	tests/greeter_test.cpp
+)
+
+target_link_libraries(greeter_test	greeter_lib)
+
+add_test(greeter_test greeter_test)

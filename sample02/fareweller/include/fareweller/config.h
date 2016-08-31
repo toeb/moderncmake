@@ -10,4 +10,6 @@
 #	  define FAREWELLER_API
 #    endif
 #  endif
+#else
+#  define FAREWELLER_API
 #endif

@@ -1,7 +1,5 @@
 #pragma once
 
-#pragma once
-
 #ifdef _MSC_VER
 #  ifdef GREETER_EXPORTS
 #   define GREETER_API __declspec(dllexport)
@@ -12,4 +10,6 @@
 #	  define GREETER_API
 #    endif
 #  endif
+#else
+#  define GREETER_API
 #endif
